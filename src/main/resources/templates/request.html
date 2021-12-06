@@ -7,7 +7,7 @@
 <body>
 <h2>Оставьте заявку на доставку мясных изделий</h2>
 
-<form action="#" th:action="@{request}" th:object="${rqForm}" method="post">
+<form action="#" th:action="@{/request}" th:object="${rqForm}" method="post">
     <h2>Детали записи</h2>
     <p>Имя<input type="text" th:field="*{client_name}"/></p>
     <p>Дата доставки<input type="date" th:field="*{delivery_date}"/></p>
