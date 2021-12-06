@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+</head>
+<body>
+<h2>Авторизация для администратора</h2>
+<form th:action="@{login}" th:object="${adminForm}" method='POST'>
+    <table>
+        <tr>
+            <td>Имя пользователя:</td>
+            <td><input type='text' name='username' th:field="*{login}"></td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td><input type='password' name='password' th:field="*{password}"/></td>
+        </tr>
+        <tr>
+            <td><input name="submit" type="submit" value="Login" /></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

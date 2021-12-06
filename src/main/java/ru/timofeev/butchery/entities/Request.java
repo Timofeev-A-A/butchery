@@ -20,6 +20,6 @@ public class Request {
     private String client_name;
     @Column(name = "phone_number")
     private String phone_number;
-    @Column(name = "order_date")
-    private Date order_date;
+    @Column(name = "delivery_date")
+    private Date delivery_date;
 }

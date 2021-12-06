@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заявки</title>
+</head>
+<body>
+<h2>Оставьте заявку на доставку мясных изделий</h2>
+
+<form action="#" th:action="@{request}" th:object="${rqForm}" method="post">
+    <h2>Детали записи</h2>
+    <p>Имя<input type="text" th:field="*{client_name}"/></p>
+    <p>Дата доставки<input type="date" th:field="*{delivery_date}"/></p>
+    <p>Номер телефона<input type="text" th:field="*{phone_number}"></p>
+    <p><input type="submit" value="Оставить заявку" /></p>
+
+</form>
+</body>
+</html>

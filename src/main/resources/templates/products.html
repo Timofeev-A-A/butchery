@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог мясной лавки</title>
+</head>
+<body>
+<h2>Каталог наших мясных изделий</h2><br>
+<table>
+    <tr th:each="product:${productList}">
+        <td th:utext="${product.title}">...</td>
+        <td th:utext="${product.description}">...</td>
+        <td th:utext="${product.price}">...</td>
+    </tr>
+</table>
+</body>
+</html>
