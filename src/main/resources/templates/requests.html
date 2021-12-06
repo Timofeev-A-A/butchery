@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Заявки</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 <h2>Список оставленных заявок</h2><br>
 <table>
+    <tr>
+        <td>Имя клиента</td>
+        <td>Дата доставки</td>
+        <td>номер телефона</td>
+    </tr>
     <tr th:each="req:${requests}">
         <td th:utext="${req.client_name}">...</td>
         <td th:utext="${req.delivery_date}">...</td>

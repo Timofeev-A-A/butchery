@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu&display=swap);
+body {
+    font-family: "Ubuntu", serif;
+    background: white;
+}
+header {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #4d4d4d;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+    position: fixed;
+    padding: 0px 6px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+}
+header a {
+    display: flex;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+
+}
+header a:hover {
+    color: crimson;
+}
+p{
+    text-align:justify;
+    width: 93%
+}
+table{
+    border: 1px solid black;
+    font-size: 115%;
+}
+th, td{
+    padding: 5px;
+    border-style: solid;
+}

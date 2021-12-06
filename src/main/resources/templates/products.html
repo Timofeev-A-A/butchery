@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог мясной лавки</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
 <h2>Каталог наших мясных изделий</h2><br>
 <table>
+    <tr>
+        <td>Наименование</td>
+        <td>Описание</td>
+        <td>Цена</td>
+    </tr>
     <tr th:each="product:${productList}">
         <td th:utext="${product.title}">...</td>
         <td th:utext="${product.description}">...</td>
